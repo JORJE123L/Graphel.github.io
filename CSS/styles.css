@@ -1,0 +1,288 @@
+
+:root{
+    --color-principal:#19d7b1;
+}
+/* RESET CSS */
+body{
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+}
+
+h1{
+    margin: 0px;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/* STYLES */
+
+body{
+    font: 15px arial, helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.contenedor{
+    min-width: 460px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* ENCABEZADO */
+
+header{
+    background-color: #24282b;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 5px solid var(--color-principal);
+
+
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor nav{
+    margin-top: 10px;
+    height: 30px;
+}
+
+.resaltado, .actual a{
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+.actual a:hover{
+    color: #ccc;
+    font-weight: bold;
+    
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+header ul li{
+
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    width: min-content;
+    height: 100%;
+}
+
+header ul li:hover{
+    background-color:  var(--color-principal);
+}
+
+
+header a{
+    display: flex;
+    align-items: center;
+
+    padding: 10px 18px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* CABECERA */
+
+#cabecera{
+    background: url(../IMAGENES/cabecera.jpg) no-repeat 0 -400px;
+    text-align: center;
+    min-height: 400px;
+    color: #fff;
+
+}
+
+#cabecera h1{
+    margin: 100px 0px 10px 0px;
+    font-size: 55px;
+}
+
+#cabecera p{
+    font-size: 20px;
+}
+
+
+/*               PAGINA INICIO          */
+
+/* SECCION BOLETIN */
+
+#boletin{
+    padding: 15px;
+    color: #fff;
+    background: #24282b;
+}
+
+#boletin .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#boletin input{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+.boton1{
+    height: 38px;
+    background-color: #e8491d;
+    border: 0;
+    padding: 0px 20px;
+    color: #fff;
+}
+
+/* SECCION CAJAS */
+
+#cajas{
+    margin-top: 30px;
+}
+#cajas .contenedor{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.caja{
+    width: 30%;
+    padding: 10px;
+
+}
+
+.caja img{
+    width: 90px;
+}
+
+/*               PAGINA NOSOTROS          */
+
+#main .contenedor{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#main-col{
+    width: 65%;
+}
+
+#lateral{
+    width: 30%;
+    margin-top: 10px;
+}
+
+.oscuro{
+    padding: 15px;
+    background-color: #35424a;
+    color: #fff;
+    margin: 10px 0px;
+}
+
+
+/*               PAGINA SERVICIOS          */
+#main{
+    margin-top: 20px;
+}
+#main h1{
+    margin: 15px 0px;
+    font-size: 20px;
+}
+
+#main-col ul li{
+    padding: 20px ;
+    border: px solid #ccc;
+    margin-bottom: 5px;
+    background-color: #e6e6e6;
+}
+
+
+/*               PAGINA CONTACTO          */
+form{
+    min-width: 300px;
+}
+
+input, textarea{
+    width: 100%;
+    height: 35px;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+}
+
+textarea{
+    height: 120px;
+}
+
+input[type="submit"]{
+    background-color: #e8491d;
+    color: #fff;
+}
+
+
+/* FOOTER */
+
+footer{
+    padding: 20px;
+    margin-top: 70px;
+    color: #fff;
+    background-color: var(--color-principal);
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+    header .contenedor{
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul li{
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+    
+
+    /* INICIO */
+    #cajas .contenedor, #boletin .contenedor, #main .contenedor{
+        flex-direction: column;
+        align-items: center;
+    }
+    .caja, #main-col, #lateral{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+     /* NOSOSTROS */
+
+}
